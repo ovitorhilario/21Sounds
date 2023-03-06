@@ -1,7 +1,7 @@
 
 # 21Sounds 🎧
 
-Olá, este é um dos Projetos mais desafiadores que já desenvolvi, inspirei-me em uma aplicação de Streaming de Música e na vontade de praticar meus conhecimentos em programação e, por conseguinte, poder aprimorar ao minhas habilidades.
+Olá, este é um dos Projetos mais desafiadores que já desenvolvi, inspirei-me em uma aplicação de Streaming de Música e na vontade de praticar meus conhecimentos em programação e, por conseguinte, poder aprimorar as minhas habilidades.
 
 | Tela Inicial | Álbum | Música |
 | :--------------------: | :--------------------: | :--------------------: |
