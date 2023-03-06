@@ -17,12 +17,12 @@
         android:theme="@style/Theme.Twentyonesounds"
         tools:targetApi="31">
         <activity
-            android:screenOrientation="landscape"
+            android:screenOrientation="portrait"
             android:name=".ui.main.MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:screenOrientation="landscape"
+            android:screenOrientation="portrait"
             android:name="com.hyper.twentyonesounds.ui.onboard.OnBoardActivity"
             android:exported="true">
             <intent-filter>
