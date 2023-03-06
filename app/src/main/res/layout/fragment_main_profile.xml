@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.hyper.twentyonesounds.utils.custom.LittleButtonView
+        android:id="@+id/btn_profile_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/gap_larger"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardElevation="0dp"
+        app:iconLittleButton="@drawable/ic_return"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_profile_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/gap_larger"
+        android:background="@color/transparent"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_profile_back">
+
+        <ImageView
+            android:background="@color/transparent"
+            android:src="@drawable/ic_account"
+            android:id="@+id/iv_profile_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_profile_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/gap_larger"
+        android:layout_marginTop="32dp"
+        android:hint="@string/place_holder_your_name"
+        app:boxBackgroundColor="@color/background"
+        app:hintTextColor="@color/gray_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_profile_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_profile_id"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/gap_larger"
+        android:layout_marginTop="@dimen/gap_larger"
+        android:hint="@string/place_holder_your_id"
+        app:boxBackgroundColor="@color/background"
+        app:hintTextColor="@color/gray_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_profile_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_profile_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/gap_larger"
+        android:layout_marginTop="@dimen/gap_larger"
+        android:hint="@string/place_holder_your_email"
+        app:boxBackgroundColor="@color/background"
+        app:hintTextColor="@color/gray_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_profile_id">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:padding="@dimen/gap_medium"
+        app:cornerRadius="20dp"
+        android:id="@+id/btn_profile_save"
+        android:layout_marginTop="@dimen/gap_larger"
+        app:layout_constraintTop_toBottomOf="@id/input_profile_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/gap_larger"
+        android:text="@string/btn_save"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

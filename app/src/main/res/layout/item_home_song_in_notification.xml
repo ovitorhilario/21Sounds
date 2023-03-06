@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:id="@+id/cv_song_item_in_notification"
+    android:paddingHorizontal="@dimen/gap_larger">
+
+    <ImageView
+        android:id="@+id/iv_song_icon_in_notification"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/round_outline"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_song_name_in_notification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/gap_larger"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/roboto_medium"
+        android:singleLine="true"
+        android:text="All the bricks in the wall"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_high"
+        app:layout_constraintEnd_toStartOf="@id/iv_action_song_notification"
+        app:layout_constraintStart_toEndOf="@id/iv_song_icon_in_notification"
+        app:layout_constraintTop_toTopOf="@id/iv_song_icon_in_notification" />
+
+    <TextView
+        android:id="@+id/tv_song_artist_in_notification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/gap_larger"
+        android:layout_marginTop="@dimen/gap_small"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/roboto_regular"
+        android:singleLine="true"
+        android:text="Pink Floid"
+        android:textColor="@color/gray_medium"
+        android:textSize="@dimen/font_size_larger"
+        app:layout_constraintEnd_toStartOf="@id/iv_action_song_notification"
+        app:layout_constraintStart_toEndOf="@id/iv_song_icon_in_notification"
+        app:layout_constraintTop_toBottomOf="@id/tv_song_name_in_notification" />
+
+    <TextView
+        android:id="@+id/tv_desc_notification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/gap_larger"
+        android:layout_marginTop="@dimen/gap_small"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/roboto_regular"
+        android:singleLine="true"
+        android:text="New Music"
+        android:textColor="@color/green"
+        android:textSize="@dimen/font_size_larger"
+        app:layout_constraintEnd_toStartOf="@id/iv_action_song_notification"
+        app:layout_constraintStart_toEndOf="@id/iv_song_icon_in_notification"
+        app:layout_constraintTop_toBottomOf="@id/tv_song_artist_in_notification" />
+
+    <ImageView
+        android:id="@+id/iv_action_song_notification"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_open"
+        app:layout_constraintBottom_toBottomOf="@id/iv_song_icon_in_notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_song_icon_in_notification" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_larger"
+        android:background="@color/gray_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_song_icon_in_notification" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

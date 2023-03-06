@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_song_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clipToPadding="false"
+    android:paddingBottom="140dp">
+
+    <com.hyper.twentyonesounds.utils.custom.LittleButtonView
+        android:id="@+id/btn_song_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_larger"
+        android:layout_marginTop="@dimen/gap_larger"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardElevation="0dp"
+        app:iconLittleButton="@drawable/ic_return"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_song_name_on_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_larger"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Song name in top bar"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_high"
+        app:layout_constraintBottom_toBottomOf="@id/btn_song_return"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_song_return"
+        app:layout_constraintTop_toTopOf="@id/btn_song_return" />
+
+    <ImageView
+        android:id="@+id/cv_song_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/background_gradient"
+        app:layout_constraintBottom_toBottomOf="@id/iv_song_icon"
+        app:layout_constraintEnd_toEndOf="@id/iv_song_icon"
+        app:layout_constraintStart_toStartOf="@id/iv_song_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_song_icon" />
+
+    <ImageView
+        android:id="@+id/iv_song_icon"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_song_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/gap_larger"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Song name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/btn_loved_song"
+        app:layout_constraintStart_toStartOf="@id/cv_song_icon"
+        app:layout_constraintTop_toBottomOf="@id/cv_song_icon" />
+
+    <ImageView
+        android:id="@+id/iv_song_artist_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:background="@drawable/shape_circle_artist_icon"
+        app:layout_constraintStart_toStartOf="@id/tv_song_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_song_name" />
+
+    <TextView
+        android:id="@+id/tv_song_artist_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_medium"
+        android:layout_marginEnd="@dimen/gap_larger"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Song artist name"
+        android:textColor="@color/gray_medium"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_song_artist_icon"
+        app:layout_constraintEnd_toStartOf="@id/btn_loved_song"
+        app:layout_constraintStart_toEndOf="@+id/iv_song_artist_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_song_artist_icon" />
+
+    <com.hyper.twentyonesounds.utils.custom.LittleButtonView
+        android:id="@+id/btn_loved_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/gap_larger"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardElevation="0dp"
+        app:iconLittleButton="@drawable/ic_favorite_outlined"
+        app:layout_constraintBottom_toBottomOf="@id/tv_song_artist_name"
+        app:layout_constraintEnd_toEndOf="@id/cv_song_icon"
+        app:layout_constraintTop_toTopOf="@id/tv_song_name" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/sb_song_duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/gap_larger"
+        android:layout_marginTop="@dimen/gap_larger"
+        app:layout_constraintEnd_toEndOf="@id/cv_song_icon"
+        app:layout_constraintStart_toStartOf="@id/cv_song_icon"
+        app:layout_constraintTop_toBottomOf="@id/iv_song_artist_icon" />
+
+    <TextView
+        android:id="@+id/tv_current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_small"
+        android:layout_marginTop="@dimen/gap_small"
+        android:fontFamily="@font/roboto_regular"
+        android:text="00:00"
+        android:textColor="@color/gray_medium"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintStart_toStartOf="@id/sb_song_duration"
+        app:layout_constraintTop_toBottomOf="@id/sb_song_duration" />
+
+    <TextView
+        android:id="@+id/tv_total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_small"
+        android:layout_marginEnd="@dimen/gap_small"
+        android:fontFamily="@font/roboto_regular"
+        android:text="2:58"
+        android:textColor="@color/gray_medium"
+        android:textSize="@dimen/font_size_small"
+        app:layout_constraintEnd_toEndOf="@id/sb_song_duration"
+        app:layout_constraintTop_toBottomOf="@id/sb_song_duration" />
+
+    <ImageView
+        android:id="@+id/btn_play_and_pause"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginVertical="@dimen/gap_larger"
+        android:src="@drawable/ic_play"
+        app:layout_constraintBottom_toBottomOf="@id/cv_song_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_song_icon" />
+
+    <com.hyper.twentyonesounds.utils.custom.LittleButtonView
+        android:id="@+id/btn_skip_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_larger"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardElevation="0dp"
+        app:iconLittleButton="@drawable/ic_skip"
+        app:layout_constraintBottom_toBottomOf="@id/btn_play_and_pause"
+        app:layout_constraintStart_toEndOf="@id/btn_play_and_pause"
+        app:layout_constraintTop_toTopOf="@id/btn_play_and_pause">
+
+    </com.hyper.twentyonesounds.utils.custom.LittleButtonView>
+
+    <com.hyper.twentyonesounds.utils.custom.LittleButtonView
+        android:id="@+id/btn_previous_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/gap_larger"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardElevation="0dp"
+        app:iconLittleButton="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@id/btn_play_and_pause"
+        app:layout_constraintEnd_toStartOf="@id/btn_play_and_pause"
+        app:layout_constraintTop_toTopOf="@id/btn_play_and_pause">
+
+    </com.hyper.twentyonesounds.utils.custom.LittleButtonView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_small">12sp</dimen>
+    <dimen name="font_size_medium">14sp</dimen>
+    <dimen name="font_size_larger">16sp</dimen>
+    <dimen name="font_size_high">18sp</dimen>
+    <dimen name="font_size_title">22sp</dimen>
+    <dimen name="font_size_header">32sp</dimen>
+    <dimen name="gap_small">8dp</dimen>
+    <dimen name="gap_medium">12dp</dimen>
+    <dimen name="gap_larger">16dp</dimen>
+    <dimen name="icon_size">32dp</dimen>
+    <dimen name="border_size">8dp</dimen>
+    <dimen name="corner_radius_size">18dp</dimen>
+</resources>

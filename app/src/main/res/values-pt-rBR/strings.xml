@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">twentyonesounds</string>
+    <string name="menu_home">Início</string>
+    <string name="menu_search">Procurar</string>
+    <string name="menu_library">Biblioteca</string>
+    <string name="profile">Perfil</string>
+    <string name="notification">Notificações</string>
+    <string name="chip_songs">Músicas</string>
+    <string name="chip_podcasts">Podcasts</string>
+    <string name="place_holder_your_name">Seu nome</string>
+    <string name="place_holder_your_id">Seu ID</string>
+    <string name="place_holder_your_email">Seu email</string>
+    <string name="btn_save">Salvar</string>
+    <string name="internet_error_message">Não é possível acessar a internet</string>
+    <string name="btn_try_again">Tentar novamente</string>
+    <string name="album_row_pop_list">Lista de Pop</string>
+    <string name="album_row_rock_list">Lista de Rock</string>
+    <string name="album_row_reggae_list">Lista Reggae</string>
+    <string name="album_row_electronic_list">Lista de Músicas Eletrônicas</string>
+    <string name="good_morning_message">Bom dia ☀️</string>
+    <string name="good_afternoon_message">Boa Tarde 🌇</string>
+    <string name="good_night_message">Boa noite 🌙</string>
+    <string name="hello_message">Olá,</string>
+    <string name="loved_albums_title">Álbuns curtidos</string>
+    <string name="all_albums_title">Todos os álbuns</string>
+    <string name="loved_songs_title">Músicas curtidas</string>
+    <string name="all_songs_title">Todas as Músicas</string>
+    <string name="song_singular_title">Música</string>
+    <string name="song_plural_title">Músicas</string>
+    <string name="album_singular_title">Álbum</string>
+    <string name="album_plural_title">Álbuns</string>
+    <string name="initial_text_search">Pesquise pelo nome de alguma música ou artista</string>
+    <string name="without_text_search">Sem resultado</string>
+    <string name="like_tittle">Curtidas</string>
+    <string name="new_song_message">Nova Música</string>
+    <string name="new_episode_message">Novo Episódio</string>
+    <string name="no_songs_yet_desc">Nenhuma música ainda</string>
+    <string name="no_album_yet_desc">Nenhum álbum ainda</string>
+</resources>

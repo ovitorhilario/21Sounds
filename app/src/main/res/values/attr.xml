@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoginComponent">
+        <attr name="text" format="string" />
+        <attr name="icon" format="reference" />
+        <attr name="CardBackgroundColor" format="color"/>
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ProfileComponent">
+        <attr name="iconProfile" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TopBarComponent">
+        <attr name="iconTopBar" format="reference" />
+        <attr name="iconAction" format="reference" />
+        <attr name="pageName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="LittleButtonView">
+        <attr name="iconLittleButton" format="reference" />
+        <attr name="backgroundClColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CardRoundedView">
+        <attr name="iconCardRounded" format="reference" />
+    </declare-styleable>
+
+</resources>

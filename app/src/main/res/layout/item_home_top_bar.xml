@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/gap_larger">
+
+    <TextView
+        android:id="@+id/tv_page_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_larger"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Page name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cv_profile" />
+
+    <com.hyper.twentyonesounds.utils.custom.LittleButtonView
+        android:id="@+id/iv_action_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/gap_small"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/cv_profile"
+        app:layout_constraintEnd_toStartOf="@id/cv_profile"
+        app:layout_constraintTop_toTopOf="@id/cv_profile" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_profile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="@dimen/gap_larger"
+        android:background="@color/transparent"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_account" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

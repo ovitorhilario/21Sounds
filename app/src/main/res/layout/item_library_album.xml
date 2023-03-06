@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_album_in_library"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:layout_marginBottom="@dimen/gap_medium"
+    app:cardCornerRadius="14dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_light">
+
+        <ImageView
+            android:id="@+id/iv_album_icon_in_library"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/gap_medium"
+            android:background="@drawable/round_outline"
+            android:clipToOutline="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_album_name_in_library"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/gap_medium"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/roboto_regular"
+            android:singleLine="true"
+            android:text="All the bricks in the wall"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_medium"
+            app:layout_constraintEnd_toStartOf="@id/iv_action_album_props"
+            app:layout_constraintStart_toEndOf="@id/iv_album_icon_in_library"
+            app:layout_constraintTop_toTopOf="@id/iv_album_icon_in_library" />
+
+        <TextView
+            android:id="@+id/tv_album_desc_in_library"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/gap_medium"
+            android:layout_marginTop="4dp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/roboto_regular"
+            android:singleLine="true"
+            android:text="Pink Floid"
+            android:textColor="@color/gray_medium"
+            android:textSize="@dimen/font_size_small"
+            app:layout_constraintEnd_toStartOf="@id/iv_action_album_props"
+            app:layout_constraintStart_toEndOf="@id/iv_album_icon_in_library"
+            app:layout_constraintTop_toBottomOf="@id/tv_album_name_in_library" />
+
+        <ImageView
+            android:id="@+id/iv_action_album_props"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_open"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/iv_album_icon_in_library"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_album_icon_in_library" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
