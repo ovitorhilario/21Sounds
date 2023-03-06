@@ -12,9 +12,9 @@ Olá, este é um dos Projetos mais desafiadores que já desenvolvi, inspirei-me 
 | ![04](https://user-images.githubusercontent.com/81326138/223218208-6d54eecd-0f49-4277-a5c8-e7039861d0bd.jpg) | ![05](https://user-images.githubusercontent.com/81326138/223218248-ef9cfaa7-441f-415c-a242-57f2dcdb3acc.jpg) | ![07](https://user-images.githubusercontent.com/81326138/223218334-57a5aa7c-5fcb-4452-a302-e9d099c2aa5f.jpg) | ![03](https://user-images.githubusercontent.com/81326138/223218440-ae56f5e5-405c-4253-ad54-61fbd549310f.jpg) |
 
 ## Funcionalidades ✅
-- Salvar músicas e álbuns na biblioteca
+- Salvar músicas e álbuns na biblioteca.
 - Simulação das músicas sendo reproduzidas em tempo real - Tocar, Pausar, Pular e Voltar.
-- Barra de Pesquisa com atualização simultânea
+- Barra de Pesquisa com atualização simultânea.
 
 ## Tecnologias usadas 🚀
 - Android | Kotlin : Arquitetura MVVM + Clean Code, RoomDataBase, Retrofit, DataStore e Coroutines.
