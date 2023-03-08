@@ -23,4 +23,4 @@ Olá, este é um dos Projetos mais desafiadores que já desenvolvi, inspirei-me 
 - [Clique Aqui](https://github.com/vitor-hilario/21Sounds/releases/download/v1.0.0-alpha/21Sounds.apk)
 
 ## Entrar em contato 
-- Linkedin : https://www.linkedin.com/in/vitor-hil%C3%A1rio-327b071b4/
+- Linkedin : https://www.linkedin.com/in/vitor-hilario/
