@@ -9,9 +9,9 @@ Olá, este é um dos Projetos mais desafiadores que já desenvolvi, inspirei-me 
 - MVVM + Clean Architecture ✔︎
 - LiveData ✔︎
 - Room DataBase ✔︎
-- Retrofit ✔︎
 - DataStore ✔︎
-- Consumo de REST API's com Coroutines ✔︎
+- Picasso ✔︎
+- Consumo de REST API 's com Coroutines, Flow e Retrofit2 ✔︎
 - Fragment Manager ✔︎
 - ViewGroups, ViewBinding, Custom Components ✔︎
 
