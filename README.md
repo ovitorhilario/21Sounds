@@ -7,7 +7,7 @@ Olá, este é um dos Projetos mais desafiadores que já desenvolvi, inspirei-me 
 
 - Android | Kotlin ✔︎
 - MVVM + Clean Architecture ✔︎
-- LiveData
+- LiveData ✔︎
 - Room DataBase ✔︎
 - Retrofit ✔︎
 - DataStore ✔︎
