@@ -11,7 +11,7 @@ Olá, este é um dos Projetos mais desafiadores que já desenvolvi, inspirei-me 
 - Room DataBase ✔︎
 - DataStore ✔︎
 - Picasso ✔︎
-- Consumo de REST API 's com Coroutines, Flow e Retrofit2 ✔︎
+- Consumo de REST API 's com Coroutines e Retrofit2 ✔︎
 - Fragment Manager ✔︎
 - ViewGroups, ViewBinding, Custom Components ✔︎
 
