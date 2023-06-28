@@ -7,10 +7,13 @@ Olá, este é um dos Projetos mais desafiadores que já desenvolvi, inspirei-me 
 
 - Android | Kotlin ✔︎
 - MVVM + Clean Architecture ✔︎
+- LiveData
 - Room DataBase ✔︎
 - Retrofit ✔︎
 - DataStore ✔︎
-- Coroutines ✔︎
+- Consumo de REST API's com Coroutines ✔︎
+- Fragment Manager ✔︎
+- ViewGroups, ViewBinding, Custom Components ✔︎
 
 ## ScreenShot 📸
 
